@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Ranker</title>
+</head>
+<body>
+    <h2>Upload Resumes & Job Description</h2>
+    <form action="/rank" method="POST" enctype="multipart/form-data">
+        <label>Job Description:</label><br>
+        <textarea name="jd" rows="10" cols="80" required></textarea><br><br>
+        <label>Select Resumes (PDF):</label><br>
+        <input type="file" name="resumes" multiple required><br><br>
+        <input type="submit" value="Rank Resumes">
+    </form>
+</body>
+</html>

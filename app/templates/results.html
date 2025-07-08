@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ranking Results</title>
+</head>
+<body>
+    <h2>Ranked Resumes</h2>
+    <table border="1">
+        <tr>
+            <th>Resume</th>
+            <th>Match Score</th>
+        </tr>
+        {% for resume, score in results %}
+        <tr>
+            <td>{{ resume }}</td>
+            <td>{{ '%.2f' | format(score * 100) }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/download">Download HR Report</a>
+</body>
+</html>
