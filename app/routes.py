@@ -45,4 +45,8 @@ def rank():
 
 @app.route("/download")
 def download():
-    return send_file("app/reports/ranked_resumes.csv", as_attachment=True)
+    from flask import send_from_directory
+    import os
+
+    report_dir = os.path.join(os.path.dirname(__file__), "reports")
+    return send_from_directory(report_dir, "ranked_resumes.csv", as_attachment=True)
