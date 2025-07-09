@@ -14,6 +14,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(PROCESSED_FOLDER, exist_ok=True)
 os.makedirs(REPORT_FOLDER, exist_ok=True)
 
+app = Flask(__name__, static_url_path='/static')
 @app.route("/")
 def index():
     return render_template("index.html")

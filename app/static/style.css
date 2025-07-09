@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #e6f0fa, #ffffff);
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.15);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+form label {
+    font-weight: 600;
+    margin-top: 20px;
+    display: block;
+    font-size: 1.1rem;
+}
+
+textarea, input[type="file"], button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+textarea:focus, input[type="file"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+th {
+    background-color:  #007BFF;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+a.btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+a.btn:hover {
+    background-color: #218838;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

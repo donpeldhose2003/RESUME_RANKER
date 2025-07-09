@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ranking Results</title>
+    <title>Ranked Resumes</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h2>Ranked Resumes</h2>
-    <table border="1">
-        <tr>
-            <th>Resume</th>
-            <th>Match Score</th>
-        </tr>
-        {% for resume, score in results %}
-        <tr>
-            <td>{{ resume }}</td>
-            <td>{{ '%.2f' | format(score * 100) }}%</td>
-        </tr>
-        {% endfor %}
-    </table>
-    <br>
-    <a href="/download">Download HR Report</a>
+    <div class="container">
+        <h1>Ranking Results</h1>
+        <table>
+            <tr>
+                <th>Resume</th>
+                <th>Match Score (%)</th>
+            </tr>
+            {% for resume, score in results %}
+            <tr>
+                <td>{{ resume }}</td>
+                <td>{{ '%.2f' | format(score * 100) }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="/download" class="btn">Download HR Report</a>
+    </div>
 </body>
 </html>

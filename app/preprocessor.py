@@ -11,3 +11,8 @@ def preprocess_text(text):
         if token.is_alpha and token.lemma_ not in stop_words
     ]
     return " ".join(tokens)
+
+def extract_skills(text, known_skills):
+    text = text.lower()
+    found_skills = [skill for skill in known_skills if skill.lower() in text]
+    return found_skills
