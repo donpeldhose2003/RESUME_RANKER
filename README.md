@@ -31,4 +31,13 @@ An intelligent web application that ranks resumes based on their relevance to a 
 | HTML/CSS/JS  | Frontend UI with light/dark mode   |
 
 
+---
+
+SCREENSHOTS
+
+![Screenshot 2025-07-10 101054](https://github.com/user-attachments/assets/c640ff66-e813-4cff-a556-98241ab6a947)
+
+![Screenshot 2025-07-10 101105](https://github.com/user-attachments/assets/ce6b6f8d-4d90-4d14-90ad-01dc608a46b7)
+
+![Screenshot 2025-07-10 101142](https://github.com/user-attachments/assets/66e15958-66b5-4169-824e-dc360eec3f8d)
 
